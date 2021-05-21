@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>User | Create Account</title>
+    <link
+            href="/templates/create_account.css"
+            rel="stylesheet"
+            type="text/css"
+    />
+</head>
+
+<style>
+
+  body 
+  {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #24305e;
+}
+
+.title {
+  font-size: 23px;
+  color: #f76c6c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  margin: 10px;
+}
+
+.title h1 {
+  padding: 5px 10px;
+  border: solid #ffffff;
+  border-width: 5px 0px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 382px;
+  overflow: hidden;
+  margin: auto;
+  padding: 60px;
+  background: #f76c6c;
+  border-radius: 17px;
+}
+
+.header {
+  font-family: sans-serif;
+  color: white;
+  margin: 0px;
+  font-size: x-large;
+  background-color: #24305e;
+  padding: 40px;
+}
+
+.project-title {
+  display: inline;
+  padding: 20px;
+  margin: 40px 0px;
+}
+
+#logout {
+  border-radius: 30px;
+  width: 100px;
+  height: 40px;
+  outline: none;
+  transition: transform 0.8s;
+  float: right;
+}
+
+#logout:hover {
+  transform: scale(.9);
+}
+
+
+#wel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  color: #24305e;
+  padding: 0px;
+}
+
+label {
+  color: #ffffff;
+  font-size: 17px;
+}
+#email, #password {
+  width: 250px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding-left: 8px;
+  margin: 10px;
+}
+
+#email:focus, #password:focus {
+  outline-width: 0;
+}
+
+#umessage {
+  color: #ffffff;
+  font-size: 18px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  margin: 0px 0px 0px 60px;
+}
+
+#submit {
+  width: 150px;
+  height: 30px;
+  border: 2px solid #24305e;
+  border-radius: 19px;
+  margin: 20px auto 15px 65px;
+  color: #ffffff;
+  outline: none;
+  background-color: #24305e;
+}
+
+#submit:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+#click {
+  font-family: sans-serif;
+  font-size: 15px;
+  color: #ffffff;
+  align-items: center;
+  margin-top: 0%;
+}
+
+.a {
+  text-decoration: none;
+  color: #24305e;
+  cursor: pointer;
+}
+
+.a:hover {
+  transform: scale(1.1);
+}
+</style>
+<body>
+<header>
+    <div class="title">
+        <h1>E-SHOPPING</h1>
+    </div>
+</header>
+<main>
+    <div class="container">
+        <h2 id="wel">Welcome, Please Sign-Up</h2>
+        <form action="index" method="post">           
+            <div class="container-items">
+              <input type="text" name="username" id="email" placeholder="User Name">
+          	</div>
+          	<div class="email">
+                <input type="email" name="email" id="email" placeholder="Email">
+            </div>
+            <div class="container-items">
+                <input type="password" name="password" id="password" placeholder="Password">
+            </div>
+            <div class="container-items">
+                <button type="submit" id="submit" name="Create Account">Sign Up</button>
+                <h4 id="click"> Already have a account? <a class="a" href="index">Click Here</a></h4>
+            </div>
+        </form>
+    </div>
+</main>
+</body>
+</html>
